@@ -1,32 +1,32 @@
-// var form = document.getElementById('form');
-// var itemList = document.getElementById('items');
-
-// form.addEventListener('add', addItem);
-
-// function addItem(e){
-//     e.preventDefault();
-
-//     var newItem = document.getElementById('items').value;
-
-//     var li = document.createElement('li');
-//     li.className = 'listItem';
-//     li.appendChild(document.createTextNode(newItem));
-
-//     itemList.appendChild(li);
-// }
-
 let addButton = document.querySelector('.add');
 let listItems = document.querySelector('#items');
 
 addButton.addEventListener('click', addTask);
+listItems.addEventListener('click', removeTask);
 
 function addTask(e){
+    //Adding a task to the input field then have it appear on the screen
     let newTask = document.querySelector('.input').value; //Get input value in the input field
-    // console.log(newTask);
     let list = document.createElement('li');
-    // console.log(list);
     list.className = 'listItem';
-    // console.log(list);
-    list.appendChild(document.createTextNode(newTask));
+  
+    list.appendChild(document.createTextNode(newTask)); //The new added element is added to the screen
     listItems.appendChild(list);
+
+    //Creating the delete button and adds when "ADD" button is clicked
+    let deleteBtn = document.createElement('button');
+    // console.log(deleteBtn);
+    deleteBtn.className = 'btnDel delete';
+    // console.log(deleteBtn)
+    deleteBtn.appendChild(document.createTextNode('Delete')); //Adding button content
+    list.appendChild(deleteBtn) //Append button to list 
+
+}
+
+function removeTask(e){
+    if(e.target.classList.contains('btnDel')){
+        let deleteTask = e.target.parentElement; //Targeting parentElement where 'btnDel' is at
+        console.log(deleteTask)
+        deleteTask.remove();
+    }
 }

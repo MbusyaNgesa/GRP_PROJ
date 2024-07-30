@@ -620,20 +620,12 @@ video {
   width: 8rem;
 }
 
-.w-80 {
-  width: 20rem;
+.w-72 {
+  width: 18rem;
 }
 
 .w-full {
   width: 100%;
-}
-
-.w-60 {
-  width: 15rem;
-}
-
-.w-72 {
-  width: 18rem;
 }
 
 .max-w-sm {
@@ -684,14 +676,6 @@ video {
   padding: 9rem;
 }
 
-.p-80 {
-  padding: 20rem;
-}
-
-.p-40 {
-  padding: 10rem;
-}
-
 .p-60 {
   padding: 15rem;
 }
@@ -722,4 +706,17 @@ video {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.btnDel{
+  background-color: black;
+  color:beige;
+  border-radius: 6px;
+  margin-top: 5px;
+  margin-left: 8px;
+  width: 15vh;
+}
+
+.listItem{
+  margin-bottom: 3px;
 }

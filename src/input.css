@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btnDel{
+    background-color: black;
+    color:beige;
+    border-radius: 6px;
+    margin-top: 5px;
+    margin-left: 8px;
+    width: 15vh;
+}
+.listItem{
+    margin-bottom: 3px;
+}

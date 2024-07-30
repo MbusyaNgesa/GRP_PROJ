@@ -7,7 +7,7 @@
     <title>To Do List</title>
 </head>
 <link href="public/style.css" rel="stylesheet">
-
+<link href="src/input.css" rel="stylesheet">
 <body>
    
     <div class="pt-20 min-h-screen bg-gray-100 flex items-center justify-center">
@@ -23,9 +23,9 @@
               <section class=" absolute top-14 left-6 mt-24 w-full max-w-sm rounded-xl overflow-hidden text-black shadow-lg p-36 mb-20 mx-auto bg-white">
                 <div class="absolute top-6 mt-2 left-6 form">
                     <ul id="items" class="list">
-                      <li class="listItem">Task 1<i class="fa-solid fa-trash-can"></i></li>
-                      <li class="listItem">Task 2</li>
-                      <li class="listItem"><strike>Task 3 </strike></li>
+                      <li class="listItem">Task 1<button class="btnDel delete">Delete</button></li>
+                      <li class="listItem">Task 2<button class="btnDel delete">Delete</button></li>
+                      <li class="listItem"><strike>Task 3 </strike><button class="btnDel delete">Delete</button></li>
    
                     </ul>
                 </div>
