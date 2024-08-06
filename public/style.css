@@ -570,16 +570,28 @@ video {
   right: 2rem;
 }
 
-.top-10 {
-  top: 2.5rem;
-}
-
-.top-14 {
-  top: 3.5rem;
-}
-
 .top-6 {
   top: 1.5rem;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.top-\[50\%\] {
+  top: 50%;
+}
+
+.left-\[50\%\] {
+  left: 50%;
+}
+
+.left-\[45\%\] {
+  left: 45%;
 }
 
 .mx-auto {
@@ -589,6 +601,10 @@ video {
 
 .mb-20 {
   margin-bottom: 5rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
 }
 
 .mt-2 {
@@ -603,18 +619,6 @@ video {
   margin-top: 1.5rem;
 }
 
-.mr-2 {
-  margin-right: 0.5rem;
-}
-
-.ml-2 {
-  margin-left: 0.5rem;
-}
-
-.block {
-  display: block;
-}
-
 .flex {
   display: flex;
 }
@@ -624,8 +628,16 @@ video {
   height: 1.5rem;
 }
 
+.min-h-80 {
+  min-height: 20rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
+}
+
+.min-h-40 {
+  min-height: 10rem;
 }
 
 .w-32 {
@@ -640,16 +652,16 @@ video {
   width: 100%;
 }
 
-.max-w-sm {
-  max-width: 24rem;
-}
-
 .items-center {
   align-items: center;
 }
 
 .justify-center {
   justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .overflow-hidden {
@@ -680,24 +692,29 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-slate-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
+}
+
+.p-10 {
+  padding: 2.5rem;
+}
+
 .p-3 {
   padding: 0.75rem;
 }
 
-.p-36 {
-  padding: 9rem;
+.p-5 {
+  padding: 1.25rem;
 }
 
-.p-60 {
-  padding: 15rem;
+.p-20 {
+  padding: 5rem;
 }
 
 .pl-2 {
   padding-left: 0.5rem;
-}
-
-.pr-2 {
-  padding-right: 0.5rem;
 }
 
 .pt-20 {
@@ -728,15 +745,27 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.btnDel{
-  background-color: black;
-  color:beige;
+.btnDel {
+  /* background-color: black; */
+  color: beige;
   border-radius: 6px;
-  margin-top: 5px;
+  /* margin-top: 5px; */
   margin-left: 8px;
-  width: 15vh;
+  /* width: 15vh; */
 }
 
-.listItem{
+.btnEdit {
+  background-color: black;
+  color: white;
+  padding: 3px 10px;
+  font-size: 0.7rem;
+  border-radius: 10%;
+}
+
+ul {
+  width: 100%;
+}
+
+.listItem {
   margin-bottom: 3px;
 }

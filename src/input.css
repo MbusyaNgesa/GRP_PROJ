@@ -2,14 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-.btnDel{
-    background-color: black;
-    color:beige;
-    border-radius: 6px;
-    margin-top: 5px;
-    margin-left: 8px;
-    width: 15vh;
+.btnDel {
+  /* background-color: black; */
+  color: beige;
+  border-radius: 6px;
+  /* margin-top: 5px; */
+  margin-left: 8px;
+  /* width: 15vh; */
 }
-.listItem{
-    margin-bottom: 3px;
+
+.btnEdit {
+  background-color: black;
+  color: white;
+  padding: 3px 10px;
+  font-size: 0.7rem;
+  border-radius: 10%;
+}
+
+ul {
+  width: 100%;
+}
+.listItem {
+  margin-bottom: 3px;
 }
